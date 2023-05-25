@@ -12,6 +12,9 @@ public class Client {
         student2.batchName = "Sept22 Intermediate";
         student2.psp = 90.80;
 
+        //Shallow Copy
+        Student student3 = new Student(student2);
+
         System.out.println("DEBUG");
     }
 }
