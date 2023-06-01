@@ -11,12 +11,12 @@ public class Client {
 
         HelloWorldPrinter printer = new HelloWorldPrinter();
         Thread thread = new Thread(printer); ///Passing task to thread which it will have to run.
-        thread.start();
+        thread.run();
 
-        Thread thread1 = new Thread(printer); ///Passing task to thread which it will have to run.
-        thread1.start();
+//        Thread thread1 = new Thread(printer); ///Passing task to thread which it will have to run.
+//        thread1.start();
 
-        doSomething();
+//        doSomething();
     }
 }
 
