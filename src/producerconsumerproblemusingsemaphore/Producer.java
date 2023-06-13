@@ -22,8 +22,8 @@ public class Producer implements Runnable {
     public void run() {
         while (true) {//Infinite number of producers are available.
             try {
-                producerSemaphore.acquire(); // producerSemaphore--
-                store.add(new Object()); // P1
+                producerSemaphore.acquire(); // producerSemaphore-- -> 0
+                store.add(new Object()); // P1, P2, P3
                 System.out.println(name + " has added the shirt, size = " + store.size());
                 //Producer has produced the shirt, notify the consumer to come and buy the shirt.
                 consumerSemaphore.release(); // consumerSemaphore++
