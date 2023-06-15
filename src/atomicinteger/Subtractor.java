@@ -13,4 +13,9 @@ public class Subtractor implements Runnable{
             count.value.addAndGet(-i);
         }
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
 }

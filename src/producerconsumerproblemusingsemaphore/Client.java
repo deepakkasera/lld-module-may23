@@ -37,6 +37,8 @@ public class Client {
 
         Thread t6 = new Thread(c3);
         t6.start();
+
+
     }
 }
 
