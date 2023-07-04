@@ -33,6 +33,9 @@ public class Client {
         shuhail.setAge(26);
         shuhail.setPsp(90);
 
+        IntellijStudent intellijStudent = (IntellijStudent) registry.get("Sept22Intellijent").clone();
+        intellijStudent.setIq(120);
+
         System.out.println("DEBUG");
     }
 }
