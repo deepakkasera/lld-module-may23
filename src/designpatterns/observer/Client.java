@@ -6,7 +6,9 @@ public class Client {
         EmailService emailService = new EmailService();
         InventoryService inventoryService = new InventoryService();
         InvoiceGenerator invoiceGenerator = new InvoiceGenerator();
+        flipkart.onOrderPlaced();
 
+        flipkart.unRegisterSubscriber(invoiceGenerator);
         flipkart.onOrderPlaced();
     }
 }

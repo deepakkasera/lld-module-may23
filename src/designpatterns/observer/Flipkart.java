@@ -28,6 +28,7 @@ public class Flipkart {
     public void onOrderPlaced() {
         //ns.notify();
         //es.sendEmail();
+        //invoiceGenerator.generateInvoice();
 
         for (OnOrderPlacedSubscriber onOrderPlacedSubscriber : onOrderPlacedSubscribers) {
             onOrderPlacedSubscriber.announceOrderPlaced();

@@ -1,7 +1,7 @@
 package designpatterns.observer;
 
 public class InvoiceGenerator implements OnOrderPlacedSubscriber {
-
+    //Subscriber
     InvoiceGenerator() {
         Flipkart flipkart = Flipkart.getInstance();
         flipkart.registerSubscriber(this);
